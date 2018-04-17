@@ -22,7 +22,7 @@
 // tools for bytes manipulation and some variations of hash functions to be user
 //***********************************************************************************************//
 
-package com.zhong;
+package com.zhong.utils;
 
 import org.bouncycastle.crypto.digests.SHA256Digest;
 import org.bouncycastle.crypto.digests.SHA512Digest;
@@ -68,14 +68,23 @@ public class CryptoPrimitives {
     /**
      * 生成并返回一个密钥，基于口令的加密（PBE password based encryption）
      *
-     * @param pass    口令
-     * @param salt    盐
-     * @param icount  未知
-     * @param keySize 要生成的密钥的长度
+     * @param pass
+     *         口令
+     * @param salt
+     *         盐
+     * @param icount
+     *         未知
+     * @param keySize
+     *         要生成的密钥的长度
+     *
      * @return 生成的密钥
-     * @throws InvalidKeySpecException  未知
-     * @throws NoSuchAlgorithmException 未知
-     * @throws NoSuchProviderException  未知
+     *
+     * @throws InvalidKeySpecException
+     *         未知
+     * @throws NoSuchAlgorithmException
+     *         未知
+     * @throws NoSuchProviderException
+     *         未知
      */
     public static byte[] keyGenSetM(String pass, byte[] salt, int icount, int keySize)
             throws InvalidKeySpecException, NoSuchAlgorithmException, NoSuchProviderException {
@@ -98,10 +107,15 @@ public class CryptoPrimitives {
     /**
      * CMAC-AES 算法,CMAC-AES算法是一种消息认证函数
      *
-     * @param key 密钥
-     * @param msg 要认证的信息
+     * @param key
+     *         密钥
+     * @param msg
+     *         要认证的信息
+     *
      * @return 对msg的签名。长度为128 bits
-     * @throws UnsupportedEncodingException 未知
+     *
+     * @throws UnsupportedEncodingException
+     *         未知
      */
     public static byte[] generateCmac(byte[] key, String msg) throws UnsupportedEncodingException {
         CMac cmac = new CMac(new AESFastEngine());
@@ -124,10 +138,15 @@ public class CryptoPrimitives {
     /**
      * 签名函数
      *
-     * @param key 密钥
-     * @param msg 要签名的信息
+     * @param key
+     *         密钥
+     * @param msg
+     *         要签名的信息
+     *
      * @return 消息的签名，长度为256 bits
-     * @throws UnsupportedEncodingException 未知
+     *
+     * @throws UnsupportedEncodingException
+     *         未知
      */
     public static byte[] generateHmac(byte[] key, String msg) throws UnsupportedEncodingException {
 
@@ -168,10 +187,15 @@ public class CryptoPrimitives {
     /**
      * 签名函数
      *
-     * @param key 密钥
-     * @param msg 要签名的信息
+     * @param key
+     *         密钥
+     * @param msg
+     *         要签名的信息
+     *
      * @return 消息的签名，长度为512 bits
-     * @throws UnsupportedEncodingException 未知
+     *
+     * @throws UnsupportedEncodingException
+     *         未知
      */
     public static byte[] generateHmac512(byte[] key, String msg) throws UnsupportedEncodingException {
 
@@ -195,7 +219,9 @@ public class CryptoPrimitives {
     /**
      * 生成随机的byte数组
      *
-     * @param sizeOfSalt byte数组额的长度
+     * @param sizeOfSalt
+     *         byte数组额的长度
+     *
      * @return 随机的byte数组
      */
     public static byte[] randomBytes(int sizeOfSalt) {
@@ -265,17 +291,29 @@ public class CryptoPrimitives {
     /**
      * CTR模式下的AES加密算法
      *
-     * @param keyBytes       密钥
-     * @param ivBytes        初始向量
-     * @param identifier     要加密的字符串
-     * @param sizeOfFileName 未知
+     * @param keyBytes
+     *         密钥
+     * @param ivBytes
+     *         初始向量
+     * @param identifier
+     *         要加密的字符串
+     * @param sizeOfFileName
+     *         未知
+     *
      * @return 未知
-     * @throws InvalidKeyException                未知
-     * @throws InvalidAlgorithmParameterException 未知
-     * @throws NoSuchAlgorithmException           未知
-     * @throws NoSuchProviderException            未知
-     * @throws NoSuchPaddingException             未知
-     * @throws IOException                        未知
+     *
+     * @throws InvalidKeyException
+     *         未知
+     * @throws InvalidAlgorithmParameterException
+     *         未知
+     * @throws NoSuchAlgorithmException
+     *         未知
+     * @throws NoSuchProviderException
+     *         未知
+     * @throws NoSuchPaddingException
+     *         未知
+     * @throws IOException
+     *         未知
      */
     public static byte[] encryptAES_CTR_String(byte[] keyBytes, byte[] ivBytes, String identifier, int sizeOfFileName)
             throws InvalidKeyException, InvalidAlgorithmParameterException, NoSuchAlgorithmException,
@@ -383,15 +421,25 @@ public class CryptoPrimitives {
     /**
      * CTR模式下的解密
      *
-     * @param input    需要解密的密文
-     * @param keyBytes 密钥
+     * @param input
+     *         需要解密的密文
+     * @param keyBytes
+     *         密钥
+     *
      * @return 解密之后的明文
-     * @throws InvalidKeyException                未知
-     * @throws InvalidAlgorithmParameterException 未知
-     * @throws NoSuchAlgorithmException           未知
-     * @throws NoSuchProviderException            未知
-     * @throws NoSuchPaddingException             未知
-     * @throws IOException                        未知
+     *
+     * @throws InvalidKeyException
+     *         未知
+     * @throws InvalidAlgorithmParameterException
+     *         未知
+     * @throws NoSuchAlgorithmException
+     *         未知
+     * @throws NoSuchProviderException
+     *         未知
+     * @throws NoSuchPaddingException
+     *         未知
+     * @throws IOException
+     *         未知
      */
     public static byte[] decryptAES_CTR_String(byte[] input, byte[] keyBytes)
             throws InvalidKeyException, InvalidAlgorithmParameterException, NoSuchAlgorithmException,
@@ -715,9 +763,12 @@ public class CryptoPrimitives {
     /**
      * 一个写文件的函数，将aInput中的内容写到dirName/aOutputFileName
      *
-     * @param aInput          要输出的内容
-     * @param aOutputFileName 输出的文件名
-     * @param dirName         输出的文件夹名
+     * @param aInput
+     *         要输出的内容
+     * @param aOutputFileName
+     *         输出的文件名
+     * @param dirName
+     *         输出的文件夹名
      */
     public static void write(byte[] aInput, String aOutputFileName, String dirName) {
         // creation of a directory if it is not created
@@ -744,7 +795,9 @@ public class CryptoPrimitives {
     /**
      * 读取文件中的内容
      *
-     * @param aInputFileName 要读取的文件的路径
+     * @param aInputFileName
+     *         要读取的文件的路径
+     *
      * @return 文件中的内容
      */
     public static byte[] readAlternateImpl(String aInputFileName) {
@@ -811,8 +864,11 @@ public class CryptoPrimitives {
     /**
      * 将byte数组转化为int
      *
-     * @param byteArray    byte数组
-     * @param numberOfBits 要转化的int是多少位的
+     * @param byteArray
+     *         byte数组
+     * @param numberOfBits
+     *         要转化的int是多少位的
+     *
      * @return 转化之后的int值
      */
     public static int getIntFromByte(byte[] byteArray, int numberOfBits) {

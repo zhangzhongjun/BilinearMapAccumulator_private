@@ -1,4 +1,4 @@
-package com.zhong;
+package com.zhong.accumulator;
 
 import it.unisa.dia.gas.jpbc.Element;
 import it.unisa.dia.gas.jpbc.Pairing;
@@ -11,14 +11,14 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 /**
- * Zr中的元素 20
- * <br>G1中的元素 128
- * <br>G2中的元素 128
- * <br>GT中的元素 128
- * <br>我们只处理G1 Zr中的元素，所有我是使用字节长度区分的
+ * Zr中的元素 长度为 20byte
+ * <br>G1中的元素 长度为 128byte
+ * <br>G2中的元素 长度为 128byte
+ * <br>GT中的元素 长度为 128byte
+ * <br>我们只处理G1 Zr中的元素，所以我是使用字节长度区分的
  * <br>但是如果涉及到了GT中的元素，则序列化会出错
  *
- * @author zhang
+ * @author 张中俊
  */
 public class SerializableElement implements Serializable {
     /**
@@ -52,8 +52,11 @@ public class SerializableElement implements Serializable {
     /**
      * Serialize this instance.
      *
-     * @param out Target to which this instance is written.
-     * @throws IOException Thrown if exception occurs during serialization.
+     * @param out
+     *         Target to which this instance is written.
+     *
+     * @throws IOException
+     *         Thrown if exception occurs during serialization.
      */
     private void writeObject(final ObjectOutputStream out) throws IOException {
         out.write(this.element.toBytes());
@@ -62,9 +65,13 @@ public class SerializableElement implements Serializable {
     /**
      * Deserialize this instance from input stream.
      *
-     * @param in Input Stream from which this instance is to be deserialized.
-     * @throws IOException            Thrown if error occurs in deserialization.
-     * @throws ClassNotFoundException Thrown if expected class is not found.
+     * @param in
+     *         Input Stream from which this instance is to be deserialized.
+     *
+     * @throws IOException
+     *         Thrown if error occurs in deserialization.
+     * @throws ClassNotFoundException
+     *         Thrown if expected class is not found.
      */
     private void readObject(final ObjectInputStream in) throws IOException, ClassNotFoundException {
         /**
