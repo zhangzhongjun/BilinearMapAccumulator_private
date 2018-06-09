@@ -4,7 +4,7 @@
 Supporting Non-membership Proofs with Bilinear-map Accumulators.pdf
 ## 算法一：生成公私钥
 私钥={生成元g，Zr域中的一个随机元素k}
-公钥={$$g^k, g^{k^2}, g^{k^3}, ...$$}
+公钥={$$ g^k, g^{k^2}, g^{k^3}, ... $$}
 ## 算法二：计算一个集合的accumulator
 ![1](imgs/1.PNG)
 其中k是私钥，X是要聚合的集合，x是X中的元素
@@ -23,7 +23,10 @@ Supporting Non-membership Proofs with Bilinear-map Accumulators.pdf
 ## 算法六：验证元素的non-witness
 将算法四取反
 ## 算法七：计算一个集合的witness
-$$w_y=g^{\prod_{y \in X-Y} y+s} $$
+$$ w_y=g^{\prod_{y \in X-Y} y+s}  $$
 ## 算法八：验证集合witness
-$$e(w_y,g^ {\prod_{y \in Y} y+s}) = e(g^ {\prod_{x \in X} x+s} , g)$$
+$$ e(w_y,g^ {\prod_{y \in Y} y+s}) = e(g^ {\prod_{x \in X} x+s} , g) $$
+
+
+
 如果满足，则witness成立；否则不成立
