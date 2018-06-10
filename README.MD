@@ -1,4 +1,22 @@
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+formula1: $$n==x$$
+
+formula2: $$n!=x$$
+
+formula3: (m==y)
+
+formula4: [m!=y]
+
+formula5: \(k==z\)
+
+formula6: \[k!=z\]
+
+
+
 # 基于双线性对的聚合器
+
+动态聚合器：每个witness可以提供一个高效的密码学证据，证明元素在集合X中。当集合X中元素插入或删除时，相应的 聚合值 和 witness 均会发生变化。
+
 
 ## 参考论文
 Supporting Non-membership Proofs with Bilinear-map Accumulators.pdf
