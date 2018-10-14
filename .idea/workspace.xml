@@ -62,25 +62,27 @@
     <session id="-1035258559">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
           <entry key="iml" value="2" />
-          <entry key="java" value="29" />
+          <entry key="java" value="31" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -88,19 +90,19 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="29" />
+          <entry key="JAVA" value="31" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3943" />
+          <entry key="java" value="4078" />
           <entry key="xml" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3943" />
+          <entry key="JAVA" value="4078" />
           <entry key="XML" value="90" />
         </counts>
       </usages-collector>
@@ -124,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5970">
-              <caret line="406" column="28" selection-start-line="406" selection-start-column="28" selection-end-line="406" selection-end-column="28" />
+            <state relative-caret-position="180">
+              <caret line="387" column="76" selection-start-line="387" selection-start-column="76" selection-end-line="387" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2349#2350#0" expanded="true" />
@@ -135,23 +137,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/zhong/accumulator/BilinearMapAccumulatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3645">
-              <caret line="250" column="30" selection-start-line="250" selection-start-column="30" selection-end-line="250" selection-end-column="30" />
+            <state relative-caret-position="195">
+              <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#333#334#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BilinearMapAccumulator.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -183,10 +178,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/TimeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/ZrPrime.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/Polynomial.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator_GongYao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/Polynomial.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator_GongYao.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/BilinearMapAccumulatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator.java" />
       </list>
     </option>
   </component>
@@ -227,7 +222,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,7 +332,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,7 +398,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BilinearMapAccumulatorTest.testElementWitness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BilinearMapAccumulatorTest.testElementWitness2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BilinearMapAccumulator" />
       <extension name="coverage">
         <pattern>
@@ -413,7 +408,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zhong.accumulator" />
       <option name="MAIN_CLASS_NAME" value="com.zhong.accumulator.BilinearMapAccumulatorTest" />
-      <option name="METHOD_NAME" value="testElementWitness" />
+      <option name="METHOD_NAME" value="testElementWitness2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -452,19 +447,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementWitness" />
-      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementNonWitness2" />
+      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementWitness2" />
       <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementNonWitness" />
-      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testSubSetWitness2" />
+      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementNonWitness2" />
       <item itemvalue="JUnit.BilinearMapAccumulatorTest.testSubSetWitness" />
+      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testSubSetWitness2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BilinearMapAccumulatorTest.testSubSetWitness2" />
         <item itemvalue="JUnit.BilinearMapAccumulatorTest.testSubSetWitness" />
-        <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementNonWitness" />
         <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementNonWitness2" />
-        <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementWitness" />
+        <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementNonWitness" />
+        <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementWitness2" />
       </list>
     </recent_temporary>
   </component>
@@ -479,63 +474,65 @@
       <workItem from="1539482991042" duration="1719000" />
       <workItem from="1539485537154" duration="9574000" />
       <workItem from="1539498007899" duration="596000" />
+      <workItem from="1539500278011" duration="150000" />
+      <workItem from="1539501420491" duration="1141000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BilinearMapAccumulatorTest_testElementWitness2 - 2018.10.14 at 13h 34m 26s.xml">
+    <history-entry file="BilinearMapAccumulatorTest_testElementWitness - 2018.10.14 at 15h 25m 06s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testElementWitness" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testElementWitness2 - 2018.10.14 at 15h 25m 14s.xml">
       <configuration name="BilinearMapAccumulatorTest.testElementWitness2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BilinearMapAccumulatorTest_testElementWitness - 2018.10.14 at 13h 34m 54s.xml">
-      <configuration name="BilinearMapAccumulatorTest.testElementWitness" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BilinearMapAccumulatorTest_testElementWitness - 2018.10.14 at 13h 35m 05s.xml">
-      <configuration name="BilinearMapAccumulatorTest.testElementWitness" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BilinearMapAccumulatorTest_testElementNonWitness2 - 2018.10.14 at 13h 35m 44s.xml">
-      <configuration name="BilinearMapAccumulatorTest.testElementNonWitness2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BilinearMapAccumulatorTest_testElementNonWitness - 2018.10.14 at 13h 35m 50s.xml">
+    <history-entry file="BilinearMapAccumulatorTest_testElementNonWitness - 2018.10.14 at 15h 25m 21s.xml">
       <configuration name="BilinearMapAccumulatorTest.testElementNonWitness" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 14h 05m 10s.xml">
-      <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" configurationId="JUnit" />
+    <history-entry file="BilinearMapAccumulatorTest_testElementNonWitness2 - 2018.10.14 at 15h 25m 26s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testElementNonWitness2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness - 2018.10.14 at 14h 06m 39s.xml">
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness - 2018.10.14 at 15h 25m 35s.xml">
       <configuration name="BilinearMapAccumulatorTest.testSubSetWitness" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 14h 06m 48s.xml">
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 15h 25m 42s.xml">
       <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 14h 09m 47s.xml">
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 15h 26m 36s.xml">
       <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 14h 10m 30s.xml">
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 15h 27m 15s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 15h 33m 34s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 15h 35m 45s.xml">
       <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12362000" />
+    <option name="totallyTimeSpent" value="13653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49563318" visible="true" weight="0.35779122" />
-      <window_info id="Structure" order="1" sideWeight="0.5043668" side_tool="true" weight="0.3524962" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4923077" visible="true" weight="0.36838123" />
+      <window_info id="Structure" order="1" sideWeight="0.50769234" side_tool="true" weight="0.36838123" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29538462" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39846155" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32923076" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3276923" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -620,16 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator_GongYao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/Polynomial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2970">
@@ -641,10 +628,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BilinearMapAccumulator.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator_GongYao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5970">
-          <caret line="406" column="28" selection-start-line="406" selection-start-column="28" selection-end-line="406" selection-end-column="28" />
+        <state relative-caret-position="180">
+          <caret line="387" column="76" selection-start-line="387" selection-start-column="76" selection-end-line="387" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2349#2350#0" expanded="true" />
@@ -655,18 +659,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zhong/accumulator/BilinearMapAccumulatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3645">
-          <caret line="250" column="30" selection-start-line="250" selection-start-column="30" selection-end-line="250" selection-end-column="30" />
+        <state relative-caret-position="195">
+          <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BilinearMapAccumulator.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>

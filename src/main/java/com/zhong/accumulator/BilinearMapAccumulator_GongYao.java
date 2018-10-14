@@ -18,21 +18,15 @@ public class BilinearMapAccumulator_GongYao implements Serializable {
     /**
      * 公钥
      */
-    private SerializableElement h = null;
     private ArrayList<SerializableElement> hs = null;
 
 
-    public BilinearMapAccumulator_GongYao(SerializableElement h, ArrayList<SerializableElement> hs) {
-        this.h = h;
+    public BilinearMapAccumulator_GongYao(ArrayList<SerializableElement> hs) {
         this.hs = hs;
     }
 
     public ArrayList<SerializableElement> getHs() {
         return hs;
-    }
-
-    public SerializableElement getH() {
-        return this.getHs().get(1);
     }
 
     /**
@@ -55,7 +49,7 @@ public class BilinearMapAccumulator_GongYao implements Serializable {
             hs.add(new SerializableElement(tt));
         }
 
-        BilinearMapAccumulator_GongYao bk = new BilinearMapAccumulator_GongYao(h,hs);
+        BilinearMapAccumulator_GongYao bk = new BilinearMapAccumulator_GongYao(hs);
 
         String bilinearMapAccumulator_KeyFile = MyUtils.getFile("keys", "BilinearMapAccumulator_GongYao.key").getAbsolutePath();
         SerializationDemonstrator.serialize(bk, bilinearMapAccumulator_KeyFile);

@@ -28,7 +28,6 @@ public class BilinearMapAccumulatorTest {
         BilinearMapAccumulator_GongYao.generateKey(siYao,10);
 
         BilinearMapAccumulator_GongYao gongYao = BilinearMapAccumulator_GongYao.getKey();
-        System.out.println("g^s = "+gongYao.getH());
         System.out.println("hs[0] = " + gongYao.getHs().get(0));
         System.out.println("hs[1] = " + gongYao.getHs().get(1));
         System.out.println("hs[2] = " + gongYao.getHs().get(2));

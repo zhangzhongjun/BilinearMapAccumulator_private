@@ -365,6 +365,49 @@ public class BilinearMapAccumulator implements Serializable {
         return new Witness(null, new SerializableElement(Wy));
     }
 
+
+    /**
+     * 获得一个子集的evidence
+     *
+     * @param y
+     *         要计算的集合
+     *
+     * @return 集合的evidence
+     *
+     * @throws Exception
+     *         异常
+     */
+    public Witness getSubsetWitness2(List<String> y) throws Exception {
+        //TODO 当y=Y的时候，应该判断为正确还是错误
+        List<String> x_sub_y = new ArrayList<String>();
+        // 求出y的差集
+        x_sub_y.addAll(this.Y);
+        x_sub_y.removeAll(y);
+
+        if(x_sub_y.size()==0){
+            Element Wy = BM_gongYao.getHs().get(0).getElement().duplicate();
+            return new Witness(null,new SerializableElement(Wy));
+        }else {
+            Element[] ys = new Element[x_sub_y.size()];
+            for (int i = 0; i < x_sub_y.size(); i++) {
+                String str = x_sub_y.get(i);
+                Element e = pairing.getZr().newElementFromHash(str.getBytes("utf-8"), 0, str.getBytes("utf-8").length);
+                ys[i] = e;
+            }
+            Element Wy = pairing.getG1().newOneElement().duplicate();
+            Element[] res = Polynomial.poly(ys);
+            for (int i = 0; i < res.length; i++) {
+                Element xiShu = res[i].duplicate();
+                Element g_pow_s_pow_i = BM_gongYao.getHs().get(i).getElement().duplicate();
+                Element g_pow_s_pow_i_pow_xishu = g_pow_s_pow_i.duplicate().powZn(xiShu.duplicate());
+                Wy = Wy.duplicate().mul(g_pow_s_pow_i_pow_xishu.duplicate());
+            }
+            return new Witness(null, new SerializableElement(Wy));
+        }
+
+    }
+
+
     /**
      * 检测一个集合的nonWitness是否成立
      *
@@ -384,46 +427,11 @@ public class BilinearMapAccumulator implements Serializable {
             Element e = pairing.getZr().newElementFromHash(str.getBytes("utf-8"), 0, str.getBytes("utf-8").length);
             temp = temp.duplicate().mul(e.duplicate().add(BM_siYao.getS().getElement()));
         }
-        Element Wy = BM_siYao.getG().getElement().duplicate().powZn(temp.duplicate());
-        Element left = pairing.pairing(witness.getWy().getElement(), Wy);
+        Element left_left = BM_siYao.getG().getElement().duplicate().powZn(temp.duplicate());
+        Element left = pairing.pairing(witness.getWy().getElement(), left_left);
         Element right = pairing.pairing(AkX.getElement(), BM_siYao.getG().getElement());
 
         return left.isEqual(right);
     }
 
-
-    /**
-     * 获得一个子集的evidence
-     *
-     * @param y
-     *         要计算的集合
-     *
-     * @return 集合的evidence
-     *
-     * @throws Exception
-     *         异常
-     */
-    public Witness getSubsetWitness2(List<String> y) throws Exception {
-        //TODO 当y=Y的时候，会抛出异常
-        List<String> x_sub_y = new ArrayList<String>();
-        // 求出y的差集
-        x_sub_y.addAll(this.Y);
-        x_sub_y.removeAll(y);
-
-        Element[] ys = new Element[x_sub_y.size()];
-        for (int i=0;i<x_sub_y.size();i++) {
-            String str = x_sub_y.get(i);
-            Element e = pairing.getZr().newElementFromHash(str.getBytes("utf-8"), 0, str.getBytes("utf-8").length);
-            ys[i] = e;
-        }
-        Element Wy = pairing.getG1().newOneElement().duplicate();
-        Element[] res = Polynomial.poly(ys);
-        for(int i=0;i<res.length;i++){
-            Element xiShu = res[i].duplicate();
-            Element g_pow_s_pow_i = BM_gongYao.getHs().get(i).getElement().duplicate();
-            Element g_pow_s_pow_i_pow_xishu = g_pow_s_pow_i.duplicate().powZn(xiShu.duplicate());
-            Wy = Wy.duplicate().mul(g_pow_s_pow_i_pow_xishu.duplicate());
-        }
-        return new Witness(null, new SerializableElement(Wy));
-    }
 }
