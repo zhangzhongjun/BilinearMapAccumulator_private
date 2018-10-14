@@ -1,16 +1,15 @@
 package com.zhong.accumulator;
 
-import it.unisa.dia.gas.jpbc.Element;
+
 import it.unisa.dia.gas.jpbc.Pairing;
 import it.unisa.dia.gas.plaf.jpbc.pairing.PairingFactory;
+import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
  * @author 张中俊
- * @create 2018-04-13 16:22
  **/
 public class BilinearMapAccumulatorTest {
 
@@ -24,7 +23,16 @@ public class BilinearMapAccumulatorTest {
     @Test
     public void generateGongYaoTest() {
         BilinearMapAccumulator_SiYao siYao = BilinearMapAccumulator_SiYao.getKey();
-        BilinearMapAccumulator_GongYao.generateKey(siYao);
+        System.out.println("g = "+siYao.getG());
+
+        BilinearMapAccumulator_GongYao.generateKey(siYao,10);
+
+        BilinearMapAccumulator_GongYao gongYao = BilinearMapAccumulator_GongYao.getKey();
+        System.out.println("g^s = "+gongYao.getH());
+        System.out.println("hs[0] = " + gongYao.getHs().get(0));
+        System.out.println("hs[1] = " + gongYao.getHs().get(1));
+        System.out.println("hs[2] = " + gongYao.getHs().get(2));
+        System.out.println("hs[3] = " + gongYao.getHs().get(3));
     }
 
     //测试某个元素的witness
@@ -38,13 +46,41 @@ public class BilinearMapAccumulatorTest {
 
         BilinearMapAccumulator bma = new BilinearMapAccumulator(s);
 
-        for (String y : new String[]{"a1", "a2", "a3", "a4", "a5", "a6"}) {
-            // 从文件a1.properties中读取参数初始化双线性群
-            Pairing pairing = PairingFactory.getPairing("params/curves/a.properties");
-            Element e = pairing.getZr().newElementFromHash(y.getBytes("utf-8"), 0, y.getBytes("utf-8").length);
-            Witness witness = bma.getWitness(e);
-            Boolean b = bma.testWitness(e, witness);
-            System.out.println(y + "在集合中 " + b);
+        for (String y : new String[]{"a1", "a2", "a3", "a4"}) {
+            Witness witness = bma.getElementWitness(y);
+            Boolean b = bma.testElementWitness(y, witness);
+            Assert.assertTrue(b);
+        }
+
+        for(String y : new String[]{"a5", "a6"}){
+            Witness witness = bma.getElementWitness(y);
+            Boolean b = bma.testElementWitness(y, witness);
+            Assert.assertFalse(b);
+        }
+    }
+
+
+    //测试某个元素的witness
+    @Test
+    public void testElementWitness2() throws Exception {
+        ArrayList<String> s = new ArrayList<>();
+        s.add("a1");
+        s.add("a2");
+        s.add("a3");
+        s.add("a4");
+
+        BilinearMapAccumulator bma = new BilinearMapAccumulator(s);
+
+        for (String y : new String[]{"a1", "a2", "a3", "a4"}) {
+            Witness witness = bma.getElementWitness2(y);
+            Boolean b = bma.testElementWitness(y, witness);
+            Assert.assertTrue(b);
+        }
+
+        for(String y : new String[]{"a5", "a6"}){
+            Witness witness = bma.getElementWitness2(y);
+            Boolean b = bma.testElementWitness(y, witness);
+            Assert.assertFalse(b);
         }
     }
 
@@ -59,13 +95,38 @@ public class BilinearMapAccumulatorTest {
 
         BilinearMapAccumulator bma = new BilinearMapAccumulator(s);
 
-        for (String y : new String[]{"a1", "a2", "a3", "a4", "a5", "a6"}) {
-            // 从文件a1.properties中读取参数初始化双线性群
-            Pairing pairing = PairingFactory.getPairing("params/curves/a.properties");
-            Element e = pairing.getZr().newElementFromHash(y.getBytes("utf-8"), 0, y.getBytes("utf-8").length);
-            NonWitness witness = bma.getNonWitness(e);
-            Boolean b = bma.testNonWitness(e, witness);
-            System.out.println(y + "不在集合中 " + b);
+        for (String y : new String[]{"a1", "a2", "a3", "a4"}) {
+            NonWitness witness = bma.getElementNonWitness(y);
+            Boolean b = bma.testElementNonWitness(y, witness);
+            Assert.assertFalse(b);
+        }
+        for(String y : new String[]{"a5", "a6"}){
+            NonWitness witness = bma.getElementNonWitness(y);
+            Boolean b = bma.testElementNonWitness(y, witness);
+            Assert.assertTrue(b);
+        }
+    }
+
+    //测试某个元素的non-witness
+    @Test
+    public void testElementNonWitness2() throws Exception {
+        ArrayList<String> s = new ArrayList<>();
+        s.add("a1");
+        s.add("a2");
+        s.add("a3");
+        s.add("a4");
+
+        BilinearMapAccumulator bma = new BilinearMapAccumulator(s);
+
+        for (String y : new String[]{"a1", "a2", "a3", "a4"}) {
+            NonWitness witness = bma.getElementNonWitness2(y);
+            Boolean b = bma.testElementNonWitness(y, witness);
+            Assert.assertFalse(b);
+        }
+        for(String y : new String[]{"a5", "a6"}){
+            NonWitness witness = bma.getElementNonWitness2(y);
+            Boolean b = bma.testElementNonWitness(y, witness);
+            Assert.assertTrue(b);
         }
     }
 
@@ -85,26 +146,29 @@ public class BilinearMapAccumulatorTest {
         subSet.add("a2");
         // 从文件a1.properties中读取参数初始化双线性群
         Pairing pairing = PairingFactory.getPairing("params/curves/a.properties");
-        Witness witness = bma.getWitness(subSet);
+        Witness witness = bma.getSubsetWitness(subSet);
         Boolean b = bma.testSubsetWitness(subSet, witness);
-        System.out.println("{a1,a2}是子集 " + b);
+        //System.out.println("{a1,a2}是子集 " + b);
+        Assert.assertTrue(b);
 
         subSet = new ArrayList<>();
         subSet.add("a1");
         subSet.add("a2");
         subSet.add("a3");
-        witness = bma.getWitness(subSet);
+        witness = bma.getSubsetWitness(subSet);
         b = bma.testSubsetWitness(subSet, witness);
-        System.out.println("{a1,a2，a3}是子集 " + b);
+        //System.out.println("{a1,a2，a3}是子集 " + b);
+        Assert.assertTrue(b);
 
         subSet = new ArrayList<>();
         subSet.add("a1");
         subSet.add("a2");
         subSet.add("a3");
         subSet.add("a4");
-        witness = bma.getWitness(subSet);
+        witness = bma.getSubsetWitness(subSet);
         b = bma.testSubsetWitness(subSet, witness);
-        System.out.println("{a1,a2，a3,a4}是子集 " + b);
+        //System.out.println("{a1,a2，a3,a4}是子集 " + b);
+        Assert.assertTrue(b);
 
         subSet = new ArrayList<>();
         subSet.add("a1");
@@ -112,68 +176,78 @@ public class BilinearMapAccumulatorTest {
         subSet.add("a3");
         subSet.add("a4");
         subSet.add("a5");
-        witness = bma.getWitness(subSet);
+        witness = bma.getSubsetWitness(subSet);
         b = bma.testSubsetWitness(subSet, witness);
-        System.out.println("{a1,a2，a3,a4,a5}是子集 " + b);
+        //System.out.println("{a1,a2，a3,a4,a5}是子集 " + b);
+        Assert.assertFalse(b);
 
         subSet = new ArrayList<>();
         subSet.add("a6");
         subSet.add("a7");
-        witness = bma.getWitness(subSet);
+        witness = bma.getSubsetWitness(subSet);
         b = bma.testSubsetWitness(subSet, witness);
-        System.out.println("{a6,a7}是子集 " + b);
-    }
-
-    //Zr域中的元素做乘法的时间
-    @Test
-    public void multipleTimeTest() throws UnsupportedEncodingException {
-        // 从文件a1.properties中读取参数初始化双线性群
-        Pairing pairing = PairingFactory.getPairing("params/curves/a.properties");
-
-        String filenamePrefix = "ind";
-        int nums[] = {10, 100, 1000, 10000, 100000, 1000000};
-        for (int num : nums) {
-            ArrayList<Element> elements = new ArrayList<>();
-            for (int i = 0; i < num; i++) {
-                String filename = filenamePrefix + i;
-                Element e = pairing.getZr().newElementFromBytes(filename.getBytes("utf-8"));
-                elements.add(e);
-            }
-
-            Element res = pairing.getZr().newOneElement();
-            long t1 = System.currentTimeMillis();
-            for (Element e : elements) {
-                res = res.duplicate().mul(e.duplicate());
-            }
-            long t2 = System.currentTimeMillis();
-            System.out.println(num + " 个元素相乘所需时间：" + (t2 - t1) + " ms");
-        }
+        //System.out.println("{a6,a7}是子集 " + b);
+        Assert.assertFalse(b);
     }
 
 
-    //G域中的元素做乘法的时间
+    //集合的witness
     @Test
-    public void multipleTimeTest2() throws UnsupportedEncodingException {
+    public void testSubSetWitness2() throws Exception {
+        ArrayList<String> s = new ArrayList<>();
+        s.add("a1");
+        s.add("a2");
+        s.add("a3");
+        s.add("a4");
+
+        BilinearMapAccumulator bma = new BilinearMapAccumulator(s);
+
+        ArrayList<String> subSet = new ArrayList<>();
+        subSet.add("a1");
+        subSet.add("a2");
         // 从文件a1.properties中读取参数初始化双线性群
         Pairing pairing = PairingFactory.getPairing("params/curves/a.properties");
+        Witness witness = bma.getSubsetWitness2(subSet);
+        Boolean b = bma.testSubsetWitness(subSet, witness);
+        //System.out.println("{a1,a2}是子集 " + b);
+        Assert.assertTrue(b);
 
-        String filenamePrefix = "ind";
-        int nums[] = {10, 100, 1000, 10000, 100000, 1000000};
-        for (int num : nums) {
-            ArrayList<Element> elements = new ArrayList<>();
-            for (int i = 0; i < num; i++) {
-                String filename = filenamePrefix + i;
-                Element e = pairing.getG1().newElementFromBytes(filename.getBytes("utf-8"));
-                elements.add(e);
-            }
+        subSet = new ArrayList<>();
+        subSet.add("a1");
+        subSet.add("a2");
+        subSet.add("a3");
+        witness = bma.getSubsetWitness2(subSet);
+        b = bma.testSubsetWitness(subSet, witness);
+        //System.out.println("{a1,a2，a3}是子集 " + b);
+        Assert.assertTrue(b);
 
-            Element res = pairing.getG1().newOneElement();
-            long t1 = System.currentTimeMillis();
-            for (Element e : elements) {
-                res = res.duplicate().mul(e.duplicate());
-            }
-            long t2 = System.currentTimeMillis();
-            System.out.println(num + " 个元素相乘所需时间：" + (t2 - t1) + " ms");
-        }
+        subSet = new ArrayList<>();
+        subSet.add("a1");
+        subSet.add("a2");
+        subSet.add("a3");
+        subSet.add("a4");
+        witness = bma.getSubsetWitness2(subSet);
+        b = bma.testSubsetWitness(subSet, witness);
+        //System.out.println("{a1,a2，a3,a4}是子集 " + b);
+        Assert.assertTrue(b);
+
+        subSet = new ArrayList<>();
+        subSet.add("a1");
+        subSet.add("a2");
+        subSet.add("a3");
+        subSet.add("a4");
+        subSet.add("a5");
+        witness = bma.getSubsetWitness2(subSet);
+        b = bma.testSubsetWitness(subSet, witness);
+        //System.out.println("{a1,a2，a3,a4,a5}是子集 " + b);
+        Assert.assertFalse(b);
+
+        subSet = new ArrayList<>();
+        subSet.add("a6");
+        subSet.add("a7");
+        witness = bma.getSubsetWitness2(subSet);
+        b = bma.testSubsetWitness(subSet, witness);
+        //System.out.println("{a6,a7}是子集 " + b);
+        Assert.assertFalse(b);
     }
 }

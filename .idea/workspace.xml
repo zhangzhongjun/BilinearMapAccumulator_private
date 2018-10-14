@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9028a85a-9a8e-41aa-a82c-d995caa839b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/Polynomial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/PolyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/TimeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/ZrPrime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/BilinearMapAccumulator.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/BilinearMapAccumulator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/BilinearMapAccumulator_GongYao.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/BilinearMapAccumulator_GongYao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/BilinearMapAccumulator_SiYao.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/BilinearMapAccumulator_SiYao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/NonWitness.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/NonWitness.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/SerializableElement.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/SerializableElement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/Witness.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/Witness.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/BilinearMapAccumulator.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/BilinearMapAccumulator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/BilinearMapAccumulator_GongYao.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/BilinearMapAccumulator_GongYao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/BilinearMapAccumulator_SiYao.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/BilinearMapAccumulator_SiYao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/NonWitness.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/NonWitness.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/SerializableElement.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/SerializableElement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/Witness.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/class-use/Witness.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/accumulator/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/accumulator/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/utils/CryptoPrimitives.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/utils/CryptoPrimitives.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/utils/MyUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/utils/MyUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/utils/SerializationDemonstrator.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/utils/SerializationDemonstrator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/utils/class-use/CryptoPrimitives.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/utils/class-use/CryptoPrimitives.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/utils/class-use/MyUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/utils/class-use/MyUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/utils/class-use/SerializationDemonstrator.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/utils/class-use/SerializationDemonstrator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/utils/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/utils/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/utils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/utils/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/utils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/utils/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/com/zhong/utils/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/zhong/utils/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keys/BilinearMapAccumulator_GongYao.key" beforeDir="false" afterPath="$PROJECT_DIR$/keys/BilinearMapAccumulator_GongYao.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keys/BilinearMapAccumulator_SiYao.key" beforeDir="false" afterPath="$PROJECT_DIR$/keys/BilinearMapAccumulator_SiYao.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator_GongYao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator_GongYao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/BilinearMapAccumulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/BilinearMapAccumulatorTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1035258559">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="3" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="29" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="3" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="29" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="3943" />
+          <entry key="xml" value="90" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="3943" />
+          <entry key="XML" value="90" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/Polynomial.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2970">
+              <caret line="228" selection-start-line="228" selection-end-line="228" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#polynomial_div#0;class#Polynomial#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5970">
+              <caret line="406" column="28" selection-start-line="406" selection-start-column="28" selection-end-line="406" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2349#2350#0" expanded="true" />
+                <element signature="e#2373#2374#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/zhong/accumulator/BilinearMapAccumulatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3645">
+              <caret line="250" column="30" selection-start-line="250" selection-start-column="30" selection-end-line="250" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BilinearMapAccumulator.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jar</find>
+      <find>artifactId</find>
+      <find>maven-javadoc-plugin</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/PolyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/TimeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/ZrPrime.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/Polynomial.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator_GongYao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/Polynomial.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhong/accumulator/BilinearMapAccumulatorTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="BilinearMapAccumulator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="BilinearMapAccumulator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1022" />
+    <option name="height" value="766" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilinearMapAccumulator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilinearMapAccumulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilinearMapAccumulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilinearMapAccumulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilinearMapAccumulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilinearMapAccumulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhong" type="462c0819:PsiDirectoryNode" />
+              <item name="accumulator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilinearMapAccumulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhong" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilinearMapAccumulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilinearMapAccumulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilinearMapAccumulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="accumulator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: it.unisa.dia.gas.jpbc:jpbc:2.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: it.unisa.dia.gas.jpbc:jpbc:2.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="jpbc-2.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: it.unisa.dia.gas.jpbc:jpbc:2.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="jpbc-2.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jpbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: it.unisa.dia.gas.plaf:plaf:2.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="BilinearMapAccumulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: it.unisa.dia.gas.plaf:plaf:2.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="plaf-2.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/BilinearMapAccumulator" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2053476" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zhong.accumulator" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zhangzhongjun\Documents\BilinearMapAccumulator\src\test\java\com\zhong\accumulator" />
+      <recent name="C:\Users\zhangzhongjun\Documents\BilinearMapAccumulator\lib" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.BilinearMapAccumulatorTest.testSubSetWitness2">
+    <configuration name="BilinearMapAccumulatorTest.testElementNonWitness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BilinearMapAccumulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhong.accumulator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zhong.accumulator" />
+      <option name="MAIN_CLASS_NAME" value="com.zhong.accumulator.BilinearMapAccumulatorTest" />
+      <option name="METHOD_NAME" value="testElementNonWitness" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BilinearMapAccumulatorTest.testElementNonWitness2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BilinearMapAccumulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhong.accumulator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zhong.accumulator" />
+      <option name="MAIN_CLASS_NAME" value="com.zhong.accumulator.BilinearMapAccumulatorTest" />
+      <option name="METHOD_NAME" value="testElementNonWitness2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BilinearMapAccumulatorTest.testElementWitness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BilinearMapAccumulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhong.accumulator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zhong.accumulator" />
+      <option name="MAIN_CLASS_NAME" value="com.zhong.accumulator.BilinearMapAccumulatorTest" />
+      <option name="METHOD_NAME" value="testElementWitness" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BilinearMapAccumulatorTest.testSubSetWitness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BilinearMapAccumulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhong.accumulator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zhong.accumulator" />
+      <option name="MAIN_CLASS_NAME" value="com.zhong.accumulator.BilinearMapAccumulatorTest" />
+      <option name="METHOD_NAME" value="testSubSetWitness" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BilinearMapAccumulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhong.accumulator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zhong.accumulator" />
+      <option name="MAIN_CLASS_NAME" value="com.zhong.accumulator.BilinearMapAccumulatorTest" />
+      <option name="METHOD_NAME" value="testSubSetWitness2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementWitness" />
+      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementNonWitness2" />
+      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementNonWitness" />
+      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testSubSetWitness2" />
+      <item itemvalue="JUnit.BilinearMapAccumulatorTest.testSubSetWitness" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BilinearMapAccumulatorTest.testSubSetWitness2" />
+        <item itemvalue="JUnit.BilinearMapAccumulatorTest.testSubSetWitness" />
+        <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementNonWitness" />
+        <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementNonWitness2" />
+        <item itemvalue="JUnit.BilinearMapAccumulatorTest.testElementWitness" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9028a85a-9a8e-41aa-a82c-d995caa839b0" name="Default Changelist" comment="" />
+      <created>1539482000858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539482000858</updated>
+      <workItem from="1539482008936" duration="473000" />
+      <workItem from="1539482991042" duration="1719000" />
+      <workItem from="1539485537154" duration="9574000" />
+      <workItem from="1539498007899" duration="596000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="BilinearMapAccumulatorTest_testElementWitness2 - 2018.10.14 at 13h 34m 26s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testElementWitness2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testElementWitness - 2018.10.14 at 13h 34m 54s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testElementWitness" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testElementWitness - 2018.10.14 at 13h 35m 05s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testElementWitness" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testElementNonWitness2 - 2018.10.14 at 13h 35m 44s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testElementNonWitness2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testElementNonWitness - 2018.10.14 at 13h 35m 50s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testElementNonWitness" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 14h 05m 10s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness - 2018.10.14 at 14h 06m 39s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testSubSetWitness" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 14h 06m 48s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 14h 09m 47s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BilinearMapAccumulatorTest_testSubSetWitness2 - 2018.10.14 at 14h 10m 30s.xml">
+      <configuration name="BilinearMapAccumulatorTest.testSubSetWitness2" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12362000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49563318" visible="true" weight="0.35779122" />
+      <window_info id="Structure" order="1" sideWeight="0.5043668" side_tool="true" weight="0.3524962" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29538462" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39846155" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32923076" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.25289574" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator_SiYao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="35" selection-start-line="35" selection-end-line="38" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhong/accumulator/TimeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1612">
+          <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="70" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/it/unisa/dia/gas/jpbc/jpbc/2.0/jpbc-2.0.jar!/it/unisa/dia/gas/jpbc/Pairing.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/it/unisa/dia/gas/plaf/plaf/2.0/plaf-2.0.jar!/it/unisa/dia/gas/plaf/jpbc/field/curve/CurveElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/SerializableElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhong/accumulator/ZrPrime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/it/unisa/dia/gas/plaf/plaf/2.0/plaf-2.0.jar!/it/unisa/dia/gas/plaf/jpbc/pairing/AbstractPairing.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../VEDB/VEDB.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhong/accumulator/PolyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator_GongYao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/Polynomial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2970">
+          <caret line="228" selection-start-line="228" selection-end-line="228" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#polynomial_div#0;class#Polynomial#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhong/accumulator/BilinearMapAccumulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5970">
+          <caret line="406" column="28" selection-start-line="406" selection-start-column="28" selection-end-line="406" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2349#2350#0" expanded="true" />
+            <element signature="e#2373#2374#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhong/accumulator/BilinearMapAccumulatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3645">
+          <caret line="250" column="30" selection-start-line="250" selection-start-column="30" selection-end-line="250" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BilinearMapAccumulator.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>BilinearMapAccumulator:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2053476" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2053476" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>BilinearMapAccumulator</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2053476" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: commons-io:commons-io:2.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2053476" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

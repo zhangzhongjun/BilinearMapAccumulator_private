@@ -5,10 +5,12 @@ import com.zhong.utils.SerializationDemonstrator;
 import it.unisa.dia.gas.jpbc.Element;
 
 import java.io.Serializable;
+import java.math.BigInteger;
+import java.util.ArrayList;
 
 /**
  * 基于双线性对的聚合器的公钥
- * <br>实际上应该有n个，g^s g^s^2  g^s^3 ....
+ * <br>有n个，g^s g^s^2  g^s^3 ....
  *
  * @author 张中俊
  **/
@@ -17,10 +19,20 @@ public class BilinearMapAccumulator_GongYao implements Serializable {
      * 公钥
      */
     private SerializableElement h = null;
+    private ArrayList<SerializableElement> hs = null;
 
 
-    public BilinearMapAccumulator_GongYao(SerializableElement h) {
+    public BilinearMapAccumulator_GongYao(SerializableElement h, ArrayList<SerializableElement> hs) {
         this.h = h;
+        this.hs = hs;
+    }
+
+    public ArrayList<SerializableElement> getHs() {
+        return hs;
+    }
+
+    public SerializableElement getH() {
+        return this.getHs().get(1);
     }
 
     /**
@@ -29,11 +41,21 @@ public class BilinearMapAccumulator_GongYao implements Serializable {
      * @param siYao
      *         私钥
      */
-    public static void generateKey(BilinearMapAccumulator_SiYao siYao) {
-        Element e = siYao.getG().getElement().duplicate().powZn(siYao.getS().getElement().duplicate()).duplicate();
-        SerializableElement h = new SerializableElement(e);
+    public static void generateKey(BilinearMapAccumulator_SiYao siYao,int q) {
+        Element g = siYao.getG().getElement().duplicate();
+        Element s = siYao.getS().getElement().duplicate();
 
-        BilinearMapAccumulator_GongYao bk = new BilinearMapAccumulator_GongYao(h);
+        SerializableElement h = new SerializableElement(g.duplicate());
+
+        ArrayList<SerializableElement> hs = new ArrayList<>();
+        hs.add(new SerializableElement(g));
+        for(int i=1;i<=q;i++){
+            Element t = s.duplicate().pow(new BigInteger(i+""));
+            Element tt = g.duplicate().powZn(t.duplicate());
+            hs.add(new SerializableElement(tt));
+        }
+
+        BilinearMapAccumulator_GongYao bk = new BilinearMapAccumulator_GongYao(h,hs);
 
         String bilinearMapAccumulator_KeyFile = MyUtils.getFile("keys", "BilinearMapAccumulator_GongYao.key").getAbsolutePath();
         SerializationDemonstrator.serialize(bk, bilinearMapAccumulator_KeyFile);
@@ -47,9 +69,5 @@ public class BilinearMapAccumulator_GongYao implements Serializable {
     public static BilinearMapAccumulator_GongYao getKey() {
         String bilinearMapAccumulator_KeyFile = MyUtils.getFile("keys", "BilinearMapAccumulator_GongYao.key").getAbsolutePath();
         return SerializationDemonstrator.deserialize(bilinearMapAccumulator_KeyFile);
-    }
-
-    public SerializableElement getH() {
-        return h;
     }
 }

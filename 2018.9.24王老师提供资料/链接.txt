@@ -1,0 +1,6 @@
+https://github.com/CJHwong/NCHU_Information_Security_2016_Bilinear_Accumulator/blob/master/example.modified.c
+
+
+https://github.com/wang950547/Conjunctive-Keyword-Search-with-VCKS-bilinear-accumulator
+
+https://blog.csdn.net/Czhenya/article/details/77610711
